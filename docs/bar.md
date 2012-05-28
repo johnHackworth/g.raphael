@@ -85,15 +85,23 @@ Create a stacked bar chart,
     var barchart = r.g.barchart(10, 10, 300, 220, [[30, 20, 10], [44, 66, 88]], {stacked:true});
     
     
-Attach hover event to piechart,
+Attach hover event to bar chart,
 
 
     // example
-    r.g.barchart.hover(function() {
+    r.g.barchart.hover(function() {  
         this.bar.attr({fill: "#333"}); 
     }, function() {
         this.bar.attr({fill: "#666"});
     });
+    
+Labels on axis
+
+Raphael.g.axis(x_start, y_start, x_width, from, to, steps, orientation, labels, dash_size, dashsize, r)
+
+ 
+
+  
 
 ## Others ##
 
